@@ -80,12 +80,11 @@
 #define MIRYOKU_MAPPING MIRYOKU_LAYOUTMAPPING_EYELASH_CORNE
 
 // Include Miryoku ZMK core
-#include "../miryoku/miryoku.dtsi"
+#include "../miryoku_zmk/miryoku/miryoku.dtsi"
 
 // Append sensor bindings to the generated Miryoku layers
 / {
     keymap {
-        compatible = "zmk,keymap";
         BASE {
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
